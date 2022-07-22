@@ -1,0 +1,379 @@
+#inicio{
+
+    display: flex;
+    height: 753px;
+    width: 1536px;
+    flex-direction: column;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 122px;
+
+   
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+header{
+    background-color: rgba(202, 201, 201, 0.936);
+    
+}
+
+
+p {
+    text-align: center;
+  }
+
+
+header .logo{
+
+    margin: 10px 0px 0px -15px;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.6em;
+    vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(34, 165, 14);
+    border-right: green 10px
+    
+}
+
+ul, ol {
+    list-style:none;
+    
+}
+
+.nav > li {
+    float:left;
+   
+}
+
+.nav li a {
+
+    
+    text-decoration:none;
+    text-align: left;
+    display:block;
+}
+
+.nav li a:hover {
+    
+    padding: 0px -80px 0px 3px;
+   
+}
+
+.nav li ul {
+   
+    background-color:#ffffff;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    display:none;
+    position:absolute;
+    min-width:140px;
+    padding: 0px;
+
+    
+}
+
+.nav li:hover > ul {
+    display:block;
+    padding: 0;
+}
+
+.nav li ul li {
+    margin: 0%;
+    position:relative;
+    padding: 0;
+    border: solid 1px;
+}
+
+.nav li ul li ul {
+    padding: 0;
+    top:0px;
+}
+
+#Intro{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    text-align: center;
+    padding: 400px 12px;
+}
+
+#Intro .container{
+    padding: 0px px;
+}
+
+#Intro h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Intro p{
+    display: none;
+    color: black;
+    text-align: justify;
+}
+
+#Intro .cartaUno{
+
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 30px 30px 30px;
+    margin: -300px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+
+#Intro .cartaDos{
+
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 30px 30px 30px;
+    margin: -300px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+
+
+#Intro .cartaTres{
+
+    background-position: center center;
+    background-size: cover;
+    padding:  30px 30px 30px 30px;
+    margin: -300px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+
+
+@media all and (min-width: 720px){
+    
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header nav{
+
+        flex-direction: row;
+        position: relative;
+        border-left: solid;
+        text-align: center;
+        padding-top:29px;
+        padding-bottom: 29px;
+        padding-left: 100px;
+        
+    }
+
+    #caracteristicas{
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    ul, ol {
+				list-style:none;
+                
+                
+			}
+
+			
+			.nav > li {
+                
+				float: center;
+            
+			}
+			
+			.nav li a {
+
+                
+				text-decoration:none;
+                text-align: left;
+				display:block;
+                
+			}
+			
+			.nav li a:hover {
+				
+                padding: 0px -80px 0px 3px;
+               
+			}
+			
+			.nav li ul {
+               
+                background-color:#ffffff;
+                border: solid;
+                border-color: rgb(0, 0, 0);
+				display:none;
+				position:absolute;
+				min-width:140px;
+                padding: 0px;
+        
+                
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+                padding: 0;
+			}
+			
+			.nav li ul li {
+                margin: 0%;
+				position:relative;
+                padding: 0;
+                border: solid 1px;
+			}
+			
+			.nav li ul li ul {
+				padding: 0;
+				top:0px;
+			}
+
+
+
+            #Intro .programas{
+                display: flex;
+                justify-content: center;
+            }
+        
+            #Intro p{
+                display: block;
+                margin-bottom: 30px;
+            }
+        
+            #Intro h2{
+                font-size: 4em;
+            }
+        
+            #Intro h3{
+                margin-top: 0;
+                color: black;
+            }
+        
+            #Intro .cartaUno{
+                
+                width: 2000px;
+                background-repeat: no-repeat;
+                background-position-y: 0;
+                background-color: #e58383;
+                box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+                
+            }
+
+
+            #Intro .cartaDos{
+                
+                width: 2000px;
+                background-repeat: no-repeat;
+                background-position-y: 0;
+                background-color: #a9cdd7;
+                box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+            }
+
+
+            #Intro .cartaTres{
+                
+                width: 2000px;
+                background-repeat: no-repeat;
+                background-position-y: 0;
+                background-color: #88d97d;
+                box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
+            }
+
+
+
+            .fondo{
+
+                padding: 200px 0px 10px 0px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                
+            }
+
+            .img1{
+
+                padding: 0px 0px 10px 60px;
+                margin: -380px 30px 30px 30px;
+                flex-direction: row;
+                justify-content: space-between; 
+                           
+            }
+
+            .img2{
+
+                padding: 0px 0px 10px 60px;
+                margin: -343px 30px 30px 500px;  
+                flex-direction: row;
+                justify-content: space-between;
+                
+            }
+
+
+            .img3{
+
+                padding: 0px 0px 10px 60px;
+                margin: -343px 30px 30px 970px;
+                flex-direction: row;
+                justify-content: space-between;
+                
+            }
+}
+
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}

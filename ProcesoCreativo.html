@@ -44,10 +44,10 @@
 					
 					</li>
 
-					<li  style="padding-right: 20px;" ><a href="">Referencias</a>
+					<li  style="padding-right: 20px;" ><a href="Referencias.html">Referencias</a>
 						<ul>
-							<li><a style="font-weight: lighter;" href=""> <strong>4.1</strong> Referencias <br> textuales </br></a></li>
-							<li><a style="font-weight: lighter;" href=""> <strong>4.2</strong> Referencias <br> audiovisuales </br></a></li>
+							<li><a style="font-weight: lighter;" href="Referencias.html"> <strong>4.1</strong> Referencias <br> textuales </br></a></li>
+							<li><a style="font-weight: lighter;" href="Referencias.html"> <strong>4.2</strong> Referencias <br> audiovisuales </br></a></li>
 						</ul>
 					</li>
 				</nav>
@@ -148,7 +148,127 @@
 
 				</div>
 		
-		
 
+				<div class="titulo4"> <p> <strong> 3.4 </strong> <span style="font-family: Bell MT;"> Las obras </span> </p> </div>
+				<div class="contenedor5">
+
+					<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides fade" >
+						  <div class="numbertext">1 / 3</div>
+
+						  <div class="slider1">
+
+							<h3 style="text-align: center;"> <span style="font-family: Monotype Corsiva; font-size: 24px;"> Paisaje bumangués </span>  </h3>
+	
+							<p class="estiloTextos">  <strong> <span style="color: orangered;"> FORMATO: </span> </strong> piano, bajo, tiple, flauta traversa, 
+								percusión menor y batería. </p>
+
+							<p class="estiloTextos"> <strong> <span style="color: orangered;"> AIRE: </span> </strong> bambuco </p>
+
+							<p class="estiloTextos">  <strong>  <span style="color: orangered;"> DESCRIPCIÓN: </span> </strong> esta obra estará presente el estilo ambient donde se aprecian acordes prolongados típicos del minimalismo y armonias 
+								densas y aleatorias del jazz moderno. El aire presente es un bambuco lento y cadencioso que pretende llevar al oyente a 
+								un paisaje calmo y sereno. </p>
+
+							<img src="Imágenes/PaisajeBuma.jpg" style="width:300px; height: 300px; margin-left: 12px; margin-top: 10px;">
+
+						  </div>
+	
+						</div>
+						    
+							  
+						<div class="mySlides fade">
+							<div class="numbertext2">2 / 3</div>
+
+							<div class="slider2">
+
+								<h3 style="text-align: center;"> <span style="font-family: Monotype Corsiva; font-size: 24px;"> Guabina y canto natural </span>  </h3>
+		
+								<p class="estiloTextos">  <strong> <span style="color: orangered;"> FORMATO: </span> </strong> tiple, bajo, piano y percusión menor 
+									(carraca de burro, chucho, marrana o zambumbia).  </p>
+	
+								<p class="estiloTextos"> <strong> <span style="color: orangered;"> AIRE: </span> </strong> guabina santandereana </p>
+	
+								<p class="estiloTextos">  <strong>  <span style="color: orangered;"> DESCRIPCIÓN: </span> </strong> esta obra está compuesta por 
+									medios fijos donde se usa el paisaje sonoro de Bucaramanga y se aprecia el canto de un ave que se ha grabado y se ha repetido 
+									durante 9 segundos, pensando desde las unidades semióticas temporales (UTSM), alterado por medio de un espectrómetro a 
+									diferentes alturas e incluido efectos sonoros basados en tiempos y en dinámicas como diferentes ecualizadores, efecto "Metalizer" 
+									y cambios de volumen. </p>
+	
+								<img src="Imágenes/LaGuabinayElCanto.jpg" style="width:300px; height: 300px; margin-left: 12px; margin-top: 10px;">
+	
+							  </div>
+							
+						  </div>
+
+
+						  <div class="mySlides fade">
+							<div class="numbertext">3 / 3</div>
+
+							<div class="slider1">
+
+								<h3 style="text-align: center;"> <span style="font-family: Monotype Corsiva; font-size: 24px;"> Champaña en totumo </span>  </h3>
+		
+								<p class="estiloTextos">  <strong> <span style="color: orangered;"> FORMATO: </span> </strong> piano, bajo, batería, tiple y 
+									flauta traversa.  </p>
+	
+								<p class="estiloTextos"> <strong> <span style="color: orangered;"> AIRE: </span> </strong> bambuco fiestero </p>
+	
+								<p class="estiloTextos">  <strong>  <span style="color: orangered;"> DESCRIPCIÓN: </span> </strong> en esta obra se aprecia una 
+									armonía disonante y juguetona típica del jazz moderno, melodías y ritmos variantes. Estará pensada desde la UTSM de modulación 
+									rítmica. Esta obra utilizará el paisaje sonoro de La Paz, Santander.</p>
+	
+								<img src="Imágenes/LaPazSant.jpg" style="width:300px; height: 300px; margin-left: 12px; margin-top: 10px;">
+	
+							  </div>
+							
+						  </div>
+					
+					
+					
+					</div>
+					  
+						
+					  
+					  
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  </div>
+					  <br>
+					
+				</div>
+
+		
+				<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+					
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+					
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+					
+					function showSlides(n) {
+					  let i;
+					  let slides = document.getElementsByClassName("mySlides");
+					  let dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					}
+				</script>
+					
 	</body>
 </html>
